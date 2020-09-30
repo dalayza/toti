@@ -1,0 +1,58 @@
+* {
+    color: grey;
+}
+
+
+/*.blod {
+  font-weight: 700; // font-weight: bold;
+} */
+
+[class="bold"] {
+    font-weight: 700;
+}
+
+
+/* #mainTitle {
+  font-size: 55px;
+} */
+
+#mainTitle {
+    font-size: 85px;
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+h1 {
+    color: pink;
+}
+
+[href="http://google.com"] {
+    color: red;
+}
+
+[href="https://google.com"] {
+    color: blue;
+}
+
+p[class="bold"] {
+    font-weight: 900;
+}
+
+section p {
+    color: brown;
+}
+
+section div p {
+    color: yellow;
+}
+
+p+p {
+    color: purple;
+}
+
+p~p {
+    color: green;
+}

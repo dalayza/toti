@@ -1,0 +1,56 @@
+h1 {
+    font-weight: bold;
+    font-size: 89px;
+    line-height: 79px;
+    color: #FFB300;
+}
+
+h2 {
+    color: #000000;
+    font-size: 21px;
+    font-weight: Bold;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: Bold;
+    color: #FFB300;
+}
+
+p {
+    font-size: 21px;
+    font-weight: lighter;
+    line-height: 1.61;
+    color: rgb(0, 0, 0);
+}
+
+.pb {
+    padding-bottom: 34px;
+}
+
+.pt {
+    padding-top: 34px;
+}
+
+ul {
+    font-size: 21px;
+    font-weight: lighter;
+    line-height: 21px * 1.61;
+}
+
+ol {
+    font-size: 21px;
+    font-weight: lighter;
+    line-height: 21px * 1.61;
+}
+
+img {
+    width: 883px;
+    height: 374px;
+}
+
+.top {
+    font-size: 21px;
+    font-weight: Bold;
+    color: #0037B3;
+}

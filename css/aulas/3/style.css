@@ -1,0 +1,32 @@
+:root {
+    font-size: 10px;
+}
+
+p {
+    color: rgb(68, 0, 255);
+    width: 50%;
+    text-align: justify;
+    max-width: 60ch;
+}
+
+section {
+    padding: 34px;
+    background-color: rgba(0, 174, 255, .5);
+}
+
+p span {
+    font-size: 50%;
+    vertical-align: -15px;
+    width: 1em;
+}
+
+p {
+    text-decoration: line-through red double;
+    /* shorthand */
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    text-decoration-line: overline;
+    line-height: 20px;
+    word-spacing: 55px;
+    text-shadow: 5px 8px 5px brown;
+}
