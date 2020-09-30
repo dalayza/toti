@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    height: 610px;
+    width: 997px;
+    padding: 21px;
+    display: flex;
+    background-color: grey;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+.flex-item {
+    height: 144px;
+    width: 89px;
+    background-color: orange;
+    border: 1px solid black;
+    color: #fff;
+    font-size: 55px;
+}
+
+.one {
+    order: 2;
+    width: 21px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.dois {
+    order: 3;
+    width: 44px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: flex-end;
+}
+
+.tres {
+    order: 4;
+    width: 27px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.quatro {
+    order: 1;
+    width: 55px;
+    flex-grow: 1;
+    flex-shrink: 2;
+}

@@ -1,0 +1,147 @@
+* {
+    width: 840px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 89px;
+    line-height: 79px;
+    color: #FFB300;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    font-size: 21px;
+    font-weight: Bold;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: Bold;
+    color: #FFB300;
+}
+
+p {
+    font-size: 21px;
+    font-weight: lighter;
+    line-height: 1.61;
+    color: rgb(0, 0, 0);
+}
+
+.pb {
+    padding-bottom: 34px;
+}
+
+.pt {
+    padding-top: 34px;
+}
+
+ul {
+    font-size: 21px;
+    font-weight: lighter;
+    line-height: 21px * 1.61;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+ol {
+    font-size: 21px;
+    font-weight: lighter;
+    line-height: 21px * 1.61;
+}
+
+img {
+    width: 883px;
+    height: 374px;
+    align-items: flex-end;
+}
+
+.top {
+    font-size: 21px;
+    font-weight: Bold;
+    color: #0037B3;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+@media(min-width: 320px) and (max-width: 748px) {
+    body {
+        background-color: #37201A;
+        color: #7A503E;
+    }
+    h1 {
+        color: #FFB300;
+    }
+    h2 {
+        color: #C27159;
+    }
+    .topnav {
+        font-size: 22px;
+    }
+    .topnav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    img {
+        width: 360px;
+        margin-left: 75px;
+    }
+    .column p {
+        max-width: 30ch;
+        color: #C27159;
+    }
+    footer {
+        background-color: #251611;
+    }
+    footer p {
+        color: #C27159;
+    }
+}
+
+@media(min-width: 1024px) {
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+}
+
+
+}

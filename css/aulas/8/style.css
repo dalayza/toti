@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.isTablet {
+    display: none;
+}
+
+.isDesktop {
+    display: none;
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .isTablet {
+        display: none;
+    }
+    .isDesktop {
+        display: block;
+    }
+}
+
+@media(min-width: 1024px) {
+    .isMobile {
+        display: none;
+    }
+    .isTablet {
+        display: block;
+    }
+    .isDesktop {
+        display: block;
+    }
+}

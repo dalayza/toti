@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 55px;
+}
+
+div {
+    margin-top: 13px;
+}
+
+.outter-wrapper {
+    padding: 21px;
+    border: 3px solid lightgrey;
+}
+
+.inner-wrapper {
+    padding: 21px;
+    border: 3px solid grey;
+}
+
+.inner-wrapper {
+    width: 100%;
+}
+
+.inner-wrapper div {
+    display: inline-block;
+    height: 377px;
+    width: 30%;
+}
+
+.blue {
+    background-color: blue;
+    float: right;
+}
+
+.red {
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 0;
+    /* right: 55px;
+    bottom: 55px; */
+}
+
+.pink {
+    background-color: pink;
+}
+
+.clear {
+    clear: both;
+}
