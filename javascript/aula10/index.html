@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <a id="myFunction" href="http://softbuild.com.br/">Go to Softbuild</a>
+
+    <p>The preventDefault() method will prevent the link above from following the URL.</p>
+
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("myFunction").addEventListener("click", function(event) {
+            event.preventDefault()
+        });
+
+        function myFunction2() {
+            var person = prompt("Please enter your name: ");
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+                    "Hello " + person + "!!!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
