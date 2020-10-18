@@ -1,0 +1,1 @@
+fetch('https://api.github.com/users/dalayza', ).then(resp => resp.json()).then(data => console.log(data));
