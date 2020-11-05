@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AnoService } from '../services/ano.service';
+import { ProdutosService } from '../services/produtos.service';
 
 @Component({
   selector: 'app-produtos',
@@ -8,8 +10,16 @@ import { Component, OnInit } from '@angular/core';
 export class ProdutosComponent implements OnInit {
 
   nome_module: string = 'Produtos';
+  ano: number;
+  produtos: any;
 
-  constructor() { }
+  constructor(
+    aS: AnoService,
+    produtos: ProdutosService
+  ) {
+    this.ano = aS.getAno();
+    this.produtos = produtos.getProducts();
+  }
 
   ngOnInit() {
   }
