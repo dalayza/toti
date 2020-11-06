@@ -24,3 +24,31 @@
 
     <p [style.display]="classe.value == 'vermelho' ? 'block' : 'none'" [class]="classe.value">Voce escolheu vermelho!!!</p>
 </article>
+
+<article>
+    <h3>Event binding</h3>
+
+    <button (click)="botaoClicado()">Me click</button>
+
+    <br><br>
+
+    <input type="text" #meuCampo (keyup)="onKeyUp(meuCampo.value)" (keyup.enter)="salvarValor(meuCampo.value)" (blur)="saioDoCampo()">
+
+    <p>Campo texto: {{ campoTexto }}</p>
+    <p>Valor salvo: {{ valorSalvo }}</p>
+
+    <br><br>
+
+    <p (mouseover)="passeMouse()">Passe mouse sobre mim!</p>
+
+    <br><br>
+
+    <select #nomes (change)="valorSelecionado(nomes.value)">
+      <option value="denis">Denis</option>
+      <option value="desiree">Desiree</option>
+      <option value="victoria">Victoria</option>
+      <option value="dylan">Dylan</option>
+    </select>
+
+    <p>Nome selecionado: {{ nome }}</p>
+</article>

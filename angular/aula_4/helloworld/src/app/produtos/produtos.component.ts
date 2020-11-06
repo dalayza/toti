@@ -12,6 +12,9 @@ export class ProdutosComponent implements OnInit {
   nome_module: string = 'Produtos';
   ano: number;
   produtos: any;
+  campoTexto: string = '';
+  valorSalvo: string = '';
+  nome: string = '';
 
   constructor(
     aS: AnoService,
@@ -24,4 +27,27 @@ export class ProdutosComponent implements OnInit {
   ngOnInit() {
   }
 
+  botaoClicado() {
+    alert('Botao clicado!!!');
+  }
+
+  onKeyUp(valor) {
+    this.campoTexto = valor;
+  }
+
+  salvarValor(valor) {
+    this.valorSalvo = valor;
+  }
+
+  saioDoCampo() {
+    alert('Saio do campo!');
+  }
+
+  passeMouse() {
+    alert('Passou mouse!');
+  }
+
+  valorSelecionado(value) {
+    this.nome = value;
+  }
 }
