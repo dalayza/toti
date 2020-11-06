@@ -5,3 +5,22 @@
 </p>
 
 <br> {{ produtos }}
+
+<article>
+    <h3>Clases e styles Binding</h3>
+
+    Selecione uma clase:
+
+    <select #classe (change)="0">
+    <option value="verde">Verde</option>
+    <option value="azul">Azul</option>
+    <option value="vermelho">Vermelho</option>
+    <option value="laranja">Laranja</option>
+  </select>
+
+    <br><br> A classe selecionada e: {{ classe.value }}
+
+    <p [class]="classe.value" [style]="{'font-weight': 'bold', 'font-size': '30px'}">Um texto para ser colorido</p>
+
+    <p [style.display]="classe.value == 'vermelho' ? 'block' : 'none'" [class]="classe.value">Voce escolheu vermelho!!!</p>
+</article>
