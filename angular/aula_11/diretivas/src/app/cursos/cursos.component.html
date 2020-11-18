@@ -1,0 +1,11 @@
+<div *ngIf="cursos.length === 0">
+    <p>Nenhum curso disponivel!</p>
+</div>
+
+<div *ngIf="cursos.length > 0">
+    <p>Temos curso disponivel!</p>
+
+    <ul>
+        <li *ngFor="let curso of cursos">{{ curso }}</li>
+    </ul>
+</div>
